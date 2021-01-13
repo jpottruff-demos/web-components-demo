@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Components Demo</title>
+
+    <style> 
+        h3 {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h3>Web Components Demo</h3>
+    
+    <!-- Custom Web Components -->
+    
+    <!-- Example 1 -->
+    <!-- <user-card-basic name="Basic User Example"></user-card-basic> -->
+    
+    <!-- Example 2 -->
+    <!-- <user-card-improved name="John Doe" avatar="https://randomuser.me/api/portraits/men/1.jpg"></user-card> -->
+    <!-- <user-card-improved name="Jane Doe" avatar="https://randomuser.me/api/portraits/women/1.jpg"></user-card> -->
+    
+    <!-- Example 3 -->
+    <user-card name="John Doe" avatar="https://randomuser.me/api/portraits/men/1.jpg">
+        <div slot="email">johndoe@yahoo.com</div>
+        <div slot="phone">111-111-1111</div>
+    </user-card>
+    
+    <user-card name="Jane Doe" avatar="https://randomuser.me/api/portraits/women/1.jpg">        
+        <div slot="email">janedoe@gmail.com</div>
+        <div slot="phone">222-222-2222</div>
+    </user-card>
+    
+    <!-- JavaScript -->
+    <!-- <script src="userCard-example1.js"></script> -->
+    <!-- <script src="userCard-example2.js"></script> -->
+    <script src="userCard-example3.js"></script>
+</body>
+</html>
